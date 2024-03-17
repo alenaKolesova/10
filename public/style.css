@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1612751403_150-p-goluboi-fon-s-oblakami-dlya-fotoshopa-179.jpg);
+}
+
+div {
+    /* border: solid; */
+    display: flex;
+}
+
+.wrapper {
+    position: relative;
+    z-index: 1;
+    flex-direction: column;
+    height: 100vh;
+
+    @media (max-width: 400px) {
+        width: 400px;
+    }
+
+    @media (min-width: 400px) and (max-width: 600px) {
+        width: 500px;
+    }
+
+    @media (min-width: 600px) {
+        width: 800px;
+    }
+
+}
+
+.bg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(172, 172, 172);
+    opacity: .5;
+}
+
+a.loadButton {
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: .8em 1em calc(.8em + 3px); 
+    border-radius: 3px;
+    background: rgb(64, 170, 199);
+    box-shadow: 0 -3px rgb(6, 124, 157) inset;
+}
+
+a.loadButton:hover {
+    background: rgb(6, 124, 157);
+}
+
+.name{
+    font-size: xx-large;
+    color: rgba(11, 11, 11, 0.401);
+    font-weight:bolder;
+    justify-content: center;
+    text-align: center;
+    padding: 20px; 
+}
+
+.weatherTemp{
+    font-size: larger;
+    font-weight:bolder;
+    justify-content: center;
+    color: white;
+}
+
+.description{
+    font-size: x-large;
+    font-weight:bolder;
+    text-align: center;
+    color: white;
+}
+
+.date{
+    font-size: x-large;
+    font-weight:bolder;
+    justify-content: center;
+    color: white;
+}
+
+.display-none{
+    display: none;
+}
