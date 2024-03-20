@@ -8,7 +8,7 @@ loadButton.onclick = () => {
         console.log('Широта:' + latitude);
         console.log('Долгота:' + longitude);
 
-        let res = await fetch(`/apiWeather?lat=${latitude}&lon=${longitude}`)
+        let res = await fetch(`/api/weather?lat=${latitude}&lon=${longitude}`)
         let resJson = await res.json()
 
         let nameElement = document.getElementById('name')

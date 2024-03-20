@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.get('/apiWeather', async(req, res) => {
+app.get('/api/weather', async(req, res) => {
     let lat = req.query.lat 
     let lon = req.query.lon
     let resWeather = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=88c8615836512d39e3e7687d2ede5e1f&lang=ru`)
